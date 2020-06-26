@@ -28,5 +28,4 @@ The designs were created to the following widths:
 
 ### Font
 
-- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
-- Weights: 400, 700
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');

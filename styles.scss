@@ -1,0 +1,27 @@
+// Mobile: 375px
+//Desktop: 1440px
+
+// Colors
+
+// Primary
+
+$gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+// Neutral
+
+$grayishBlue: hsl(229, 7%, 55%);
+$paleBlue: hsl(243, 100%, 93%);
+$darkBlue: hsl(228, 56%, 26%);
+$veryDarkBlue: hsl(229, 57%, 11%);
+
+// Typography
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+$raleway400: 'Raleway' 400;
+$raleway700: 'Raleway' 700;
+
+.body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
