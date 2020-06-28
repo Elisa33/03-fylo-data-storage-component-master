@@ -21,13 +21,24 @@ $veryDarkBlue: hsl(229, 57%, 11%);
 $raleway400: 'Raleway' 400;
 $raleway700: 'Raleway' 700;
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     background: $veryDarkBlue;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom ;
 }
 
 h3, span{
@@ -35,30 +46,70 @@ h3, span{
 }
 
 main{
-    max-width: 1140px;
+    align-self: center;
+    min-width: 1140px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+ 
 }
 
-main div{
-    width: 40%;
+.actions, .storage{
     background: $darkBlue;
     padding: 2em;
     border-radius: 1em;
+    margin: 1em;
 }
 
+
 .actions{
-    border-top-right-radius: 4em;
+    width: 35%;
+    border-top-right-radius: 8em;
     height: 200px;
+    padding: 4em;
+}
+
+.menu{
+    display: flex;
+    margin-top: 2em;
+    div{
+        background: $veryDarkBlue;
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
 }
 
 .storage{
+    width: 60%;
     height: 150px;
 
 }
 
+.fondo-barra{
+    border-radius: 1em;
+    background: $veryDarkBlue;
+    height: 1.5em;
+}
+
+.barra{
+    width: 80%;
+    border-radius: 1em;
+    height: 1.5em;
+    background: hsl(335, 100%, 65%);
+    background-color: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+
+}
+
 .attribution{
-    margin-top: auto;
+
+    color: #fff;
+    display: block
 }
