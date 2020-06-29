@@ -103,9 +103,19 @@ main{
     width: 80%;
     border-radius: 1em;
     height: 1.5em;
-    background: hsl(335, 100%, 65%);
-    background-color: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    background: -o-linear-gradient(left, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
 
+    //background: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    .circle{
+
+    
+    }
+}
+
+.minmax{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .attribution{
