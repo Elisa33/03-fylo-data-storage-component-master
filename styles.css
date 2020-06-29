@@ -53,6 +53,7 @@ main {
   padding: 2em;
   border-radius: 1em;
   margin: 1em;
+  margin-top: auto;
 }
 
 .actions {
@@ -88,20 +89,43 @@ main {
 
 .storage {
   width: 60%;
-  height: 150px;
+  height: 170px;
 }
 
 .fondo-barra {
   border-radius: 1em;
   background: #0c122c;
-  height: 1.5em;
+  margin-top: 1em;
+  height: 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.barra {
+.fondo-barra .barra {
   width: 80%;
   border-radius: 1em;
   height: 1.5em;
-  background: -o-linear-gradient(left, #ffa399 0%, #ff4d97 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(left, #ffa399 0%, #ff4d97 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fondo-barra .barra .circle {
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 50%;
+  background: #fff;
+  margin-left: auto;
+  margin-right: 3px;
 }
 
 .minmax {

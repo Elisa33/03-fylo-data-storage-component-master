@@ -61,6 +61,7 @@ main{
     padding: 2em;
     border-radius: 1em;
     margin: 1em;
+    margin-top: auto;
 }
 
 
@@ -83,34 +84,39 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 }
 
 .storage{
     width: 60%;
-    height: 150px;
-
+    height: 170px;
 }
 
 .fondo-barra{
     border-radius: 1em;
     background: $veryDarkBlue;
-    height: 1.5em;
-}
-
-.barra{
-    width: 80%;
-    border-radius: 1em;
-    height: 1.5em;
-    background: -o-linear-gradient(left, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
-
-    //background: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
-    .circle{
-
-    
+    margin-top: 1em;
+    height: 1.8em;
+    display: flex;
+    align-items: center;
+    .barra{
+        width: 80%;
+        border-radius: 1em;
+        height: 1.5em;
+        background-image: linear-gradient(left, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+        display: flex;
+        align-items: center;
+        .circle{
+            width: 1.3em;
+            height: 1.3em;
+            border-radius: 50%;
+            background: #fff;
+            margin-left: auto;
+            margin-right: 3px;
+        }
     }
 }
+
 
 .minmax{
     display: flex;
