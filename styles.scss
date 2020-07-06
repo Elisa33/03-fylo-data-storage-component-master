@@ -66,7 +66,7 @@ main{
 
 
 .actions{
-    width: 35%;
+    width: 33%;
     border-top-right-radius: 8em;
     height: 200px;
     padding: 4em;
@@ -90,38 +90,61 @@ main{
 .storage{
     width: 60%;
     height: 170px;
-}
-
-.fondo-barra{
-    border-radius: 1em;
-    background: $veryDarkBlue;
-    margin-top: 1em;
-    height: 1.8em;
-    display: flex;
-    align-items: center;
-    .barra{
-        width: 80%;
+    .fondo-barra{
         border-radius: 1em;
-        height: 1.5em;
-        background-image: linear-gradient(left, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+        background: $veryDarkBlue;
+        margin-top: 1em;
+        height: 1.8em;
         display: flex;
         align-items: center;
-        .circle{
-            width: 1.3em;
-            height: 1.3em;
-            border-radius: 50%;
-            background: #fff;
-            margin-left: auto;
-            margin-right: 3px;
+        .barra{
+            width: 80%;
+            border-radius: 1em;
+            height: 1.5em;
+            background-image: linear-gradient(left, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 100%);
+            display: flex;
+            align-items: center;
+            .circle{
+                width: 1.3em;
+                height: 1.3em;
+                border-radius: 50%;
+                background: #fff;
+                margin-left: auto;
+                margin-right: 3px;
+            }
         }
     }
 }
 
 
+
+
 .minmax{
+    position: relative;
+    bottom: 90px;
     display: flex;
     width: 100%;
     justify-content: space-between;
+}
+
+.bubble{
+    position: relative;
+    top:-130px;
+    left: 450px;
+    width: 180px;
+    height: 70px;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+}
+
+.bubble-tail {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: relative;
+    top:-140px;
+    left:600px;
 }
 
 .attribution{
